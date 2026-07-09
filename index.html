@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashraf Paint Agency</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Noto+Serif+Bengali:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span><i class="fas fa-phone-alt"></i> +880 1817-089151</span>
+      <span><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</span>
+      <span><i class="fas fa-clock"></i> শনি – বৃহস্পতি: সকাল ৯টা – রাত ৮টা</span>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <div class="logo-icon">
+          <img src="./image/logo.jpeg" width="200" height="150" alt="Ashraf Paint Agency Logo" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">Ashraf Paint</span>
+          <span class="logo-sub">Agency</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#brands">Brands</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://wa.me/8801XXXXXXXXX" class="whatsapp-nav" target="_blank">
+        <i class="fab fa-whatsapp"></i> Place Order
+      </a>
+      <button class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO / SLIDER ===== -->
+  <section class="hero" id="home">
+    <div class="slider" id="slider">
+      <div class="slide slide-1 active">
+        <div class="slide-content">
+          <span class="slide-badge">বার্জার ক্লাব সুপ্রিম গোল্ড ডিলার</span>
+          <h1>রঙে রঙিন করুন<br />আপনার স্বপ্নের ঘর</h1>
+          <p>ইন্টেরিয়র ও এক্সটেরিয়র রঙের সেরা সমাহার — পাইকারি ও খুচরায়</p>
+          <div class="hero-btns">
+            <a href="#products" class="btn-primary">পণ্য দেখুন</a>
+            <a href="https://wa.me/8801XXXXXXXXX" class="btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp অর্ডার
+            </a>
+          </div>
+        </div>
+        <div class="slide-decor">
+          <div class="paint-splash s1"></div>
+          <div class="paint-splash s2"></div>
+          <div class="paint-splash s3"></div>
+          <div class="paint-can">🪣</div>
+        </div>
+      </div>
+
+      <div class="slide slide-2">
+        <div class="slide-content">
+          <span class="slide-badge">পিডিলাইট ফেভিকল অথরাইজড ডিলার</span>
+          <h1>সর্বোচ্চ মানের<br />রঙ সামগ্রী</h1>
+          <p>প্রাইমার, সিলার, বার্নিশ, পলিশ — সব এক জায়গায়</p>
+          <div class="hero-btns">
+            <a href="#categories" class="btn-primary">ক্যাটাগরি দেখুন</a>
+            <a href="https://wa.me/8801XXXXXXXXX" class="btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp অর্ডার
+            </a>
+          </div>
+        </div>
+        <div class="slide-decor">
+          <div class="paint-splash s4"></div>
+          <div class="paint-splash s5"></div>
+          <div class="paint-can c2">🎨</div>
+        </div>
+      </div>
+
+      <div class="slide slide-3">
+        <div class="slide-content">
+          <span class="slide-badge">পাইকারি ও খুচরা</span>
+          <h1>আয়রন, জিঙ্ক অক্সাইড<br />স্পিরিট ও রজন</h1>
+          <p>শিল্প ও নির্মাণ কাজের জন্য সব ধরনের রং সামগ্রী</p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn-primary">যোগাযোগ করুন</a>
+            <a href="https://wa.me/8801XXXXXXXXX" class="btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp অর্ডার
+            </a>
+          </div>
+        </div>
+        <div class="slide-decor">
+          <div class="paint-splash s6"></div>
+          <div class="paint-splash s7"></div>
+          <div class="paint-can c3">🖌️</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider controls -->
+    <button class="slider-btn prev" id="prevBtn">&#8249;</button>
+    <button class="slider-btn next" id="nextBtn">&#8250;</button>
+    <div class="slider-dots" id="sliderDots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </section>
+
+  <!-- ===== COLOR STRIP ===== -->
+  <div class="color-strip">
+    <div class="color-block" style="background:#E63946;"></div>
+    <div class="color-block" style="background:#F4A261;"></div>
+    <div class="color-block" style="background:#E9C46A;"></div>
+    <div class="color-block" style="background:#2A9D8F;"></div>
+    <div class="color-block" style="background:#264653;"></div>
+    <div class="color-block" style="background:#6D28D9;"></div>
+    <div class="color-block" style="background:#EC4899;"></div>
+    <div class="color-block" style="background:#10B981;"></div>
+    <div class="color-block" style="background:#3B82F6;"></div>
+    <div class="color-block" style="background:#F59E0B;"></div>
+    <div class="color-block" style="background:#EF4444;"></div>
+    <div class="color-block" style="background:#8B5CF6;"></div>
+  </div>
+
+  <!-- ===== BRANDS ===== -->
+  <section class="section brands-section" id="brands">
+    <div class="container">
+      <div class="section-header">
+        <h2>আমাদের ব্র্যান্ড</h2>
+        <p>বিশ্বমানের ব্র্যান্ডের অথরাইজড ডিলার</p>
+      </div>
+      <div class="brands-grid">
+        <div class="brand-card berger">
+          <div class="brand-logo-box">
+            <span class="brand-icon">🏆</span>
+            <h3>Berger Paints</h3>
+            <span class="brand-tag">ক্লাব সুপ্রিম গোল্ড</span>
+          </div>
+          <p>বার্জার পেইন্টস — বাংলাদেশের অন্যতম সেরা রঙ ব্র্যান্ড। ইন্টেরিয়র থেকে এক্সটেরিয়র সব সমাধান এক ছাদের নিচে।
+          </p>
+          <div class="brand-badge">অথরাইজড ডিলার ✓</div>
+        </div>
+        <div class="brand-card pidilite">
+          <div class="brand-logo-box">
+            <span class="brand-icon">💎</span>
+            <h3>Pidilite Fevicol</h3>
+            <span class="brand-tag">অথরাইজড ডিলার</span>
+          </div>
+          <p>পিডিলাইট ফেভিকল — আঠা ও কনস্ট্রাকশন কেমিক্যালে বিশ্বনেতা। নির্মাণকাজের জন্য সর্বোত্তম পছন্দ।</p>
+          <div class="brand-badge">অথরাইজড ডিলার ✓</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES ===== -->
+  <section class="section categories-section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>পণ্যের ক্যাটাগরি</h2>
+        <p>আমাদের বিস্তৃত পণ্য পরিসর থেকে আপনার প্রয়োজনীয় সামগ্রী বেছে নিন</p>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card" style="--cat-color:#E63946;">
+          <div class="cat-icon">🏠</div>
+          <h3>ইন্টেরিয়র রঙ</h3>
+          <p>ঘরের ভেতরের দেয়ালের জন্য সেরা মানের রঙ</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+        <div class="cat-card" style="--cat-color:#F4A261;">
+          <div class="cat-icon">🏗️</div>
+          <h3>এক্সটেরিয়র রঙ</h3>
+          <p>বাইরের দেয়ালের জন্য আবহাওয়া-প্রতিরোধী রঙ</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+        <div class="cat-card" style="--cat-color:#2A9D8F;">
+          <div class="cat-icon">🛡️</div>
+          <h3>প্রাইমার ও সিলার</h3>
+          <p>রঙের আগে দেয়াল প্রস্তুত করার সামগ্রী</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+        <div class="cat-card" style="--cat-color:#6D28D9;">
+          <div class="cat-icon">✨</div>
+          <h3>বার্নিশ ও পলিশ</h3>
+          <p>কাঠ ও ধাতবের জন্য উন্নতমানের বার্নিশ</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+        <div class="cat-card" style="--cat-color:#E9C46A;">
+          <div class="cat-icon">⚙️</div>
+          <h3>আয়রন ও জিঙ্ক অক্সাইড</h3>
+          <p>শিল্পকাজে ব্যবহারের জন্য বিশেষ রঙ উপাদান</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+        <div class="cat-card" style="--cat-color:#EC4899;">
+          <div class="cat-icon">🧴</div>
+          <h3>স্পিরিট ও থিনার</h3>
+          <p>রঙ পাতলা করার জন্য উচ্চমানের স্পিরিট</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+        <div class="cat-card" style="--cat-color:#10B981;">
+          <div class="cat-icon">🌿</div>
+          <h3>গালা ও করফা</h3>
+          <p>ঐতিহ্যবাহী রঙ উপাদান, সর্বোচ্চ মান নিশ্চিত</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+        <div class="cat-card" style="--cat-color:#3B82F6;">
+          <div class="cat-icon">🔬</div>
+          <h3>রজন</h3>
+          <p>শিল্প ও নির্মাণকাজে ব্যবহৃত বিভিন্ন ধরনের রজন</p>
+          <a href="#products" class="cat-link">দেখুন →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS ===== -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>আমাদের পণ্যসমূহ</h2>
+        <p>সেরা মানের পণ্য, সেরা দামে — পাইকারি ও খুচরায়</p>
+      </div>
+
+      <!-- Filter tabs -->
+      <div class="filter-tabs" id="filterTabs">
+        <button class="filter-btn active" data-filter="all">সকল পণ্য</button>
+        <button class="filter-btn" data-filter="interior">ইন্টেরিয়র</button>
+        <button class="filter-btn" data-filter="exterior">এক্সটেরিয়র</button>
+        <button class="filter-btn" data-filter="primer">প্রাইমার/সিলার</button>
+        <button class="filter-btn" data-filter="varnish">বার্নিশ/পলিশ</button>
+        <button class="filter-btn" data-filter="industrial">শিল্প সামগ্রী</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+
+        <!-- Interior -->
+        <div class="product-card" data-cat="interior">
+          <div class="product-img" style="background:linear-gradient(135deg,#ffecd2,#fcb69f);">
+            <span class="product-emoji">🏠</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Silk Luxury Emulsion</h4>
+            <p>অভ্যন্তরীণ দেয়ালের জন্য সিল্কি স্মুথ ফিনিশ</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#E63946;"></span>
+              <span class="clr" style="background:#3B82F6;"></span>
+              <span class="clr" style="background:#10B981;"></span>
+              <span class="clr" style="background:#F59E0B;"></span>
+              <span class="clr-more">+৫০টি রঙ</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Silk Luxury Emulsion সম্পর্কে জানতে চাই"
+              class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="interior">
+          <div class="product-img" style="background:linear-gradient(135deg,#a1c4fd,#c2e9fb);">
+            <span class="product-emoji">✨</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Robbialac Interior</h4>
+            <p>ইন্টেরিয়রের জন্য উচ্চমানের ওয়াশেবল পেইন্ট</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#EC4899;"></span>
+              <span class="clr" style="background:#8B5CF6;"></span>
+              <span class="clr" style="background:#F4A261;"></span>
+              <span class="clr" style="background:#fff; border:1px solid #ddd;"></span>
+              <span class="clr-more">+৪০টি রঙ</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Robbialac Interior সম্পর্কে জানতে চাই"
+              class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="interior">
+          <div class="product-img" style="background:linear-gradient(135deg,#fbc2eb,#a6c1ee);">
+            <span class="product-emoji">🎨</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Weathercoat Interior</h4>
+            <p>আর্দ্রতারোধী ইন্টেরিয়র পেইন্ট</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#2A9D8F;"></span>
+              <span class="clr" style="background:#264653;"></span>
+              <span class="clr" style="background:#E9C46A;"></span>
+              <span class="clr-more">+৩০টি রঙ</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Weathercoat Interior সম্পর্কে জানতে চাই"
+              class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <!-- Exterior -->
+        <div class="product-card" data-cat="exterior">
+          <div class="product-img" style="background:linear-gradient(135deg,#84fab0,#8fd3f4);">
+            <span class="product-emoji">🏗️</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Weathercoat Exterior</h4>
+            <p>বৃষ্টি ও রোদ প্রতিরোধী উন্নত মানের এক্সটেরিয়র পেইন্ট</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#E63946;"></span>
+              <span class="clr" style="background:#F4A261;"></span>
+              <span class="clr" style="background:#264653;"></span>
+              <span class="clr-more">+৬০টি রঙ</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Weathercoat Exterior সম্পর্কে জানতে চাই"
+              class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="exterior">
+          <div class="product-img" style="background:linear-gradient(135deg,#fddb92,#d1fdff);">
+            <span class="product-emoji">☀️</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Robbialac Exterior</h4>
+            <p>দীর্ঘস্থায়ী রঙ ধরে রাখার গ্যারান্টি</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#E9C46A;"></span>
+              <span class="clr" style="background:#F59E0B;"></span>
+              <span class="clr" style="background:#3B82F6;"></span>
+              <span class="clr-more">+৪৫টি রঙ</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Robbialac Exterior সম্পর্কে জানতে চাই"
+              class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <!-- Primer/Sealer -->
+        <div class="product-card" data-cat="primer">
+          <div class="product-img" style="background:linear-gradient(135deg,#e0c3fc,#8ec5fc);">
+            <span class="product-emoji">🛡️</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Wall Primer</h4>
+            <p>দেয়ালের জন্য উচ্চমানের প্রাইমার</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#f1f1f1; border:1px solid #ddd;"></span>
+              <span class="clr-more">সাদা</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Wall Primer সম্পর্কে জানতে চাই" class="order-btn"
+              target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="primer">
+          <div class="product-img" style="background:linear-gradient(135deg,#cfd9df,#e2ebf0);">
+            <span class="product-emoji">🔒</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Wall Sealer</h4>
+            <p>দেয়ালের ছিদ্র বন্ধ করার সর্বোত্তম সিলার</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#e8e8e8; border:1px solid #ddd;"></span>
+              <span class="clr-more">ট্রান্সপারেন্ট</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Wall Sealer সম্পর্কে জানতে চাই" class="order-btn"
+              target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <!-- Varnish -->
+        <div class="product-card" data-cat="varnish">
+          <div class="product-img" style="background:linear-gradient(135deg,#ffeaa7,#dfe6e9);">
+            <span class="product-emoji">🪵</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Berger Wood Varnish</h4>
+            <p>কাঠের জন্য উচ্চমানের বার্নিশ, দীর্ঘস্থায়ী সুরক্ষা</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#8B4513;"></span>
+              <span class="clr" style="background:#D2691E;"></span>
+              <span class="clr-more">৫টি শেড</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Berger Wood Varnish সম্পর্কে জানতে চাই" class="order-btn"
+              target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="varnish">
+          <div class="product-img" style="background:linear-gradient(135deg,#f8b500,#fce38a);">
+            <span class="product-emoji">💎</span>
+            <span class="product-badge">বার্জার</span>
+          </div>
+          <div class="product-info">
+            <h4>Wood Polish & Lacquer</h4>
+            <p>আসবাবপত্রে চকচকে ফিনিশের জন্য সর্বোত্তম পলিশ</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#CD853F;"></span>
+              <span class="clr-more">ক্লিয়ার ও রঙিন</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি Wood Polish সম্পর্কে জানতে চাই" class="order-btn"
+              target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <!-- Industrial -->
+        <div class="product-card" data-cat="industrial">
+          <div class="product-img" style="background:linear-gradient(135deg,#b2bec3,#636e72);">
+            <span class="product-emoji">⚙️</span>
+            <span class="product-badge">শিল্প</span>
+          </div>
+          <div class="product-info">
+            <h4>আয়রন অক্সাইড</h4>
+            <p>লাল, হলুদ ও কালো আয়রন অক্সাইড — সর্বোচ্চ মান</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#8B0000;"></span>
+              <span class="clr" style="background:#DAA520;"></span>
+              <span class="clr" style="background:#222;"></span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি আয়রন অক্সাইড সম্পর্কে জানতে চাই" class="order-btn"
+              target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="industrial">
+          <div class="product-img" style="background:linear-gradient(135deg,#dfe6e9,#b2bec3);">
+            <span class="product-emoji">🔬</span>
+            <span class="product-badge">শিল্প</span>
+          </div>
+          <div class="product-info">
+            <h4>জিঙ্ক অক্সাইড</h4>
+            <p>জং প্রতিরোধী রঙ তৈরিতে ব্যবহৃত জিঙ্ক অক্সাইড</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#f0f0f0; border:1px solid #ccc;"></span>
+              <span class="clr-more">সাদা পাউডার</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি জিঙ্ক অক্সাইড সম্পর্কে জানতে চাই" class="order-btn"
+              target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="industrial">
+          <div class="product-img" style="background:linear-gradient(135deg,#74b9ff,#a29bfe);">
+            <span class="product-emoji">🧴</span>
+            <span class="product-badge">শিল্প</span>
+          </div>
+          <div class="product-info">
+            <h4>স্পিরিট ও থিনার</h4>
+            <p>রঙ পাতলা করার জন্য মিনারেল স্পিরিট ও লেকার থিনার</p>
+            <div class="product-colors">
+              <span class="clr" style="background:rgba(100,150,255,0.3); border:1px solid #aaa;"></span>
+              <span class="clr-more">পরিষ্কার তরল</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি স্পিরিট সম্পর্কে জানতে চাই" class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="industrial">
+          <div class="product-img" style="background:linear-gradient(135deg,#55efc4,#81ecec);">
+            <span class="product-emoji">🌿</span>
+            <span class="product-badge">শিল্প</span>
+          </div>
+          <div class="product-info">
+            <h4>গালা (Shellac)</h4>
+            <p>কাঠ ও আসবাবের জন্য প্রাকৃতিক গালা রজন</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#C8A96E;"></span>
+              <span class="clr-more">প্রাকৃতিক</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি গালা সম্পর্কে জানতে চাই" class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="industrial">
+          <div class="product-img" style="background:linear-gradient(135deg,#fd79a8,#e17055);">
+            <span class="product-emoji">🔶</span>
+            <span class="product-badge">শিল্প</span>
+          </div>
+          <div class="product-info">
+            <h4>রজন (Resin)</h4>
+            <p>বিভিন্ন ধরনের সিনথেটিক ও ন্যাচারাল রজন</p>
+            <div class="product-colors">
+              <span class="clr" style="background:#FFA07A;"></span>
+              <span class="clr-more">একাধিক গ্রেড</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি রজন সম্পর্কে জানতে চাই" class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="industrial">
+          <div class="product-img" style="background:linear-gradient(135deg,#fdcb6e,#e17055);">
+            <span class="product-emoji">🟤</span>
+            <span class="product-badge">শিল্প</span>
+          </div>
+          <div class="product-info">
+            <h4>করফা (Turpentine)</h4>
+            <p>তেলের রঙ পাতলা করতে ও পরিষ্কারে ব্যবহৃত করফা</p>
+            <div class="product-colors">
+              <span class="clr" style="background:rgba(255,200,100,0.5); border:1px solid #aaa;"></span>
+              <span class="clr-more">বিশুদ্ধ তরল</span>
+            </div>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি করফা সম্পর্কে জানতে চাই" class="order-btn" target="_blank">
+              <i class="fab fa-whatsapp"></i> অর্ডার করুন
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>কেন আমাদের বেছে নেবেন?</h2>
+        <p>আশরাফ পেইন্ট এজেন্সী — আপনার বিশ্বস্ত সঙ্গী</p>
+      </div>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon" style="background:#FFF3E0; color:#F4A261;">🏆</div>
+          <h3>অথরাইজড ডিলার</h3>
+          <p>বার্জার ও পিডিলাইটের অফিশিয়াল ক্লাব সুপ্রিম গোল্ড ডিলার</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:#E8F5E9; color:#10B981;">💯</div>
+          <h3>১০০% আসল পণ্য</h3>
+          <p>সরাসরি কোম্পানি থেকে সংগৃহীত সম্পূর্ণ খাঁটি পণ্য</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:#E3F2FD; color:#3B82F6;">📦</div>
+          <h3>পাইকারি ও খুচরা</h3>
+          <p>যেকোনো পরিমাণে পণ্য সরবরাহ — পাইকারি ও খুচরা উভয়</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:#FCE4EC; color:#EC4899;">🚀</div>
+          <h3>দ্রুত ডেলিভারি</h3>
+          <p>অর্ডার দিন, দ্রুততম সময়ে পৌঁছে যাবে আপনার দোরগোড়ায়</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:#F3E5F5; color:#8B5CF6;">💬</div>
+          <h3>বিশেষজ্ঞ পরামর্শ</h3>
+          <p>রঙ বেছে নিতে বিশেষজ্ঞের পরামর্শ সম্পূর্ণ বিনামূল্যে</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon" style="background:#E8EAF6; color:#6D28D9;">💰</div>
+          <h3>সেরা মূল্য</h3>
+          <p>বাজারের সেরা দামে সর্বোচ্চ মানের পণ্য পাওয়ার নিশ্চয়তা</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-art">
+          <div class="paint-palette">
+            <div class="palette-blob" style="background:#E63946;"></div>
+            <div class="palette-blob" style="background:#F4A261;"></div>
+            <div class="palette-blob" style="background:#E9C46A;"></div>
+            <div class="palette-blob" style="background:#2A9D8F;"></div>
+            <div class="palette-blob" style="background:#6D28D9;"></div>
+            <div class="palette-blob" style="background:#EC4899;"></div>
+            <div class="palette-center">🎨</div>
+          </div>
+        </div>
+        <div class="about-content">
+          <span class="about-tag">আমাদের সম্পর্কে</span>
+          <h2>আশরাফ পেইন্ট এজেন্সী</h2>
+          <p>আশরাফ পেইন্ট এজেন্সী দীর্ঘদিন ধরে বাংলাদেশে উচ্চমানের রঙ ও পেইন্ট সামগ্রী সরবরাহ করে আসছে। আমরা
+            <strong>বার্জার পেইন্টস ক্লাব সুপ্রিম গোল্ড</strong> এবং <strong>পিডিলাইট ফেভিকল</strong>-এর অথরাইজড ডিলার।
+          </p>
+          <p>আমাদের কাছে পাওয়া যায় — ইন্টেরিয়র ও এক্সটেরিয়র রঙ, প্রাইমার ও সিলার, বার্নিশ, আয়রন ও জিঙ্ক অক্সাইড,
+            স্পিরিট, পলিশ, গালা, করফা, রজন সহ বিস্তৃত সব পণ্য।</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">৪০+</span>
+              <span class="stat-label">পণ্য</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">২টি</span>
+              <span class="stat-label">শীর্ষ ব্র্যান্ড</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">পাইকারি</span>
+              <span class="stat-label">ও খুচরা</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>যোগাযোগ করুন</h2>
+        <p>WhatsApp-এ মেসেজ করুন, আমরা সর্বদা প্রস্তুত আপনার সেবায়</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card main-contact">
+          <div class="wa-big-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h3>WhatsApp-এ অর্ডার করুন</h3>
+          <p>পণ্যের নাম, পরিমাণ ও আপনার ঠিকানা পাঠিয়ে দিন। আমরা দ্রুত সাড়া দেব।</p>
+          <a href="https://wa.me/8801XXXXXXXXX?text=আমি পেইন্ট অর্ডার করতে চাই" class="wa-btn-big" target="_blank">
+            <i class="fab fa-whatsapp"></i> +880 1XXXXXXXXX
+          </a>
+          <div class="contact-times">
+            <span>🕙 শনি – বৃহস্পতি: সকাল ৯টা – রাত ৮টা</span>
+            <span>🕌 শুক্রবার: সকাল ১০টা – রাত ৬টা</span>
+          </div>
+        </div>
+        <div class="contact-info-cards">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt" style="color:#E63946;"></i>
+            <div>
+              <h4>আমাদের ঠিকানা</h4>
+              <p>ঢাকা, বাংলাদেশ</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-phone-alt" style="color:#10B981;"></i>
+            <div>
+              <h4>ফোন নম্বর</h4>
+              <p>+880 1XXXXXXXXX</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fab fa-whatsapp" style="color:#25D366;"></i>
+            <div>
+              <h4>WhatsApp</h4>
+              <p>+880 1XXXXXXXXX</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <i class="fas fa-clock" style="color:#F59E0B;"></i>
+            <div>
+              <h4>খোলার সময়</h4>
+              <p>শনি – বৃহস্পতি: ৯টা–৮টা</p>
+            </div>
+          </div>
+          <div class="wholesale-box">
+            <h4>🏭 পাইকারি যোগাযোগ</h4>
+            <p>বড় অর্ডার ও পাইকারি মূল্যের জন্য সরাসরি WhatsApp করুন।</p>
+            <a href="https://wa.me/8801XXXXXXXXX?text=আমি পাইকারি অর্ডার সম্পর্কে জানতে চাই" target="_blank">পাইকারি
+              অর্ডার করুন →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <span>🎨</span>
+            <div>
+              <span class="fl-main">আশরাফ পেইন্ট এজেন্সী</span>
+            </div>
+          </div>
+          <p>বার্জার পেইন্টস ক্লাব সুপ্রিম গোল্ড ও পিডিলাইট ফেভিকলের অথরাইজড ডিলার। মানসম্পন্ন রঙ সামগ্রীর বিশ্বস্ত
+            সূত্র।</p>
+          <a href="https://wa.me/8801XXXXXXXXX" class="footer-wa" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp করুন
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>পণ্যসমূহ</h4>
+          <ul>
+            <li><a href="#products">ইন্টেরিয়র রঙ</a></li>
+            <li><a href="#products">এক্সটেরিয়র রঙ</a></li>
+            <li><a href="#products">প্রাইমার ও সিলার</a></li>
+            <li><a href="#products">বার্নিশ ও পলিশ</a></li>
+            <li><a href="#products">আয়রন ও জিঙ্ক অক্সাইড</a></li>
+            <li><a href="#products">স্পিরিট ও করফা</a></li>
+            <li><a href="#products">গালা ও রজন</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>ব্র্যান্ড</h4>
+          <ul>
+            <li><a href="#brands">Berger Paints</a></li>
+            <li><a href="#brands">Pidilite Fevicol</a></li>
+          </ul>
+          <h4 style="margin-top:1.5rem;">দ্রুত লিংক</h4>
+          <ul>
+            <li><a href="#home">হোম</a></li>
+            <li><a href="#categories">ক্যাটাগরি</a></li>
+            <li><a href="#about">আমাদের সম্পর্কে</a></li>
+            <li><a href="#contact">যোগাযোগ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>যোগাযোগ</h4>
+          <p><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</p>
+          <p><i class="fas fa-phone-alt"></i> +880 1XXXXXXXXX</p>
+          <p><i class="fab fa-whatsapp"></i> +880 1XXXXXXXXX</p>
+          <p><i class="fas fa-clock"></i> শনি–বৃহস্পতি: ৯টা–৮টা</p>
+          <div class="color-dots">
+            <span style="background:#E63946;"></span>
+            <span style="background:#F4A261;"></span>
+            <span style="background:#E9C46A;"></span>
+            <span style="background:#2A9D8F;"></span>
+            <span style="background:#6D28D9;"></span>
+            <span style="background:#EC4899;"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© ২০২৪ আশরাফ পেইন্ট এজেন্সী। সমস্ত অধিকার সংরক্ষিত।</p>
+        <p>বার্জার ক্লাব সুপ্রিম গোল্ড | পিডিলাইট ফেভিকল অথরাইজড ডিলার</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float button -->
+  <a href="https://wa.me/8801XXXXXXXXX?text=আমি পেইন্ট সম্পর্কে জানতে চাই" class="wa-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    <span>অর্ডার করুন</span>
+  </a>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
